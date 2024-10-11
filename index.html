@@ -3,20 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modern UI</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: justify;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            background-color: #6a11cb;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 0;
+            font-size: 0.95em;
+            color: #666;
+            border-bottom: 1px solid #eee;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        #button {
+            display: inline-block;
+            font-size: 1em;
+            color: #fff;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(37, 117, 252, 0.2);
+        }
+
+        #button:hover {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(37, 117, 252, 0.3);
+        }
+
+        #button:active {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 117, 252, 0.2);
         }
     </style>
 </head>
 <body>
-    <p>Note :</p>
-    <li>Gunakan Mode Dekstop jika menggunakan HP agar membawakan pengalaman yang bagus</li>
-    <li>Tidak boleh wadul ke yang lebih Tua</li>
-    <li>Tidak boleh Marah</li>
-    <li>Scroll tampilan web sampai bawah ya^^</li>
-    <p>Jika sudah, klik <a href="next.html" id="button">ini</a></p>
+    <div class="container">
+        <p>Note :</p>
+        <ul>
+            <li>Gunakan Mode Dekstop jika menggunakan HP agar membawakan pengalaman yang bagus</li>
+            <li>Tidak boleh wadul ke yang lebih Tua</li>
+            <li>Tidak boleh Marah</li>
+        </ul>
+        <p>Jika sudah, <a href="next.html" id="button">klik ini</a></p>
+    </div>
 </body>
 </html>
